@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Mukta:wght@300&family=Nunito:wght@300;400;500&display=swap");
+
+* {
+  font-family: "Cabin", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0A0F13;
+}
+.profile-card {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 370px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  background-color: #f4f4f4;
+  border-radius: 35px;
+  position: relative;
+  
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  background-color: #141414;
+  height: 36%;
+  width: 100%;
+  border-radius: 24px 24px 0px 0px;
+  top: 0;
+  left: 0;
+}
+.img {
+  position: relative;
+  /* top: 18px; */
+  border-radius: 100%;
+  /* margin-bottom: 75px; */
+}
+
+.img .profile-image {
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-data .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text-data .work {
+  font-size: 15px;
+  font-size: 700;
+}
+.profile-card .media-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  
+}
+.media-buttons{
+
+  padding-bottom: 10px;
+}
+.media-buttons .link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px;
+  width: 34px;
+  height: 34px;
+  background-color: #141414;
+  border-radius: 50%;
+  color: #ffffff;
+
+}
+.link:hover{
+  color: rgb(216, 230, 228);
+}
+.button {
+  background-color: #141414;
+  padding: 8px 24px;
+  border-radius: 24px;
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+.Like {
+
+  color: white;
+  background-color: #141414;
+  padding: 8px 45px;
+  border-radius: 24px;
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  /* margin: px; */
+}
+
